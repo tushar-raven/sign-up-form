@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,16 +9,64 @@
     <link href="style.css" rel="stylesheet" href="">
     <script src="script.js" defer></script>
 </head>
+
 <body>
     <div class="page-container">
-        <div class="green-bg">
+        <div class="left-container">
             <div class="logo-container">
                 <img src="./assets/odin-lined.png" alt="odin-logo">
                 <p>ODIN</p>
             </div>
             <img src="./assets/halie-west-25xggax4bSA-unsplash.jpg" alt="grass-background">
         </div>
-        <div class="form-container"></div>
+        <div class="right-container">
+            <div class="hero-content">
+                <p>This is not a real online service! You know you need something like this in your life to help you
+                    realize your deepest dreams. Sign up <em>now</em> to get started.</p><br>
+                <p>You <em>know</em> you want to.</p>
+            </div>
+            <form method="#">
+                <div class="form">
+                    <h1>Let's do this!</h1>
+                    <fieldset>
+                        <div>
+                            <label for="fname">FIRST NAME</label><br>
+                            <input type="text" id="fname" name="fname" placeholder="Tushar" required>
+                        </div>
+                        <div>
+                            <label for="lname">LAST NAME</label><br>
+                            <input type="text" id="lname" name="lname" placeholder="Tayal" required>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div>
+                            <label for="email">EMAIL</label><br>
+                            <input type="email" id="email" name="e-mail" placeholder="tushar68053@gmail.com" required>
+                        </div>
+                        <div>
+                            <label for="phone">PHONE NUMBER</label><br>
+                            <input type="tel" id="phone" name="phone-number" placeholder="1234567890" maxlength="10" required>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div>
+                            <label for="pwd">PASSWORD</label><br>
+                            <input type="password" id="pwd" name="password" required>
+                        </div>
+                        <div>
+                            <label for="confirm-pwd">CONFIRM PASSWORD</label><br>
+                            <input type="password" id="confirm-pwd" name="confirm-password" required>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="footer">
+                    <button type="submit">Create Account</button>
+                    <p>Already have an account? <a href="#">Log in</a></p>
+                </div>
+            </form>
+
+        </div>
     </div>
 </body>
+
 </html>
