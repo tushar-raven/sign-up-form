@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up Form</title>
+    <title>Sign-up Form</title>
     <link href="style.css" rel="stylesheet" href="">
     <script src="script.js" defer></script>
 </head>
@@ -31,31 +31,37 @@
                     <fieldset>
                         <div>
                             <label for="fname">FIRST NAME</label><br>
-                            <input type="text" id="fname" name="fname" placeholder="Tushar" required>
+                            <input type="text" id="fname" name="fname" placeholder="Tushar" pattern="[A-Za-z]{1,20}" title="Numbers are not allowed" required>
+                            <p class="error" id="fname-error"></p>
                         </div>
                         <div>
                             <label for="lname">LAST NAME</label><br>
-                            <input type="text" id="lname" name="lname" placeholder="Tayal" required>
+                            <input type="text" id="lname" name="lname" placeholder="Tayal" pattern="[A-Za-z]{1,20}" title="Numbers are not allowed" required>
+                            <p class="error" id="lname-error"></p>
                         </div>
                     </fieldset>
                     <fieldset>
                         <div>
                             <label for="email">EMAIL</label><br>
                             <input type="email" id="email" name="e-mail" placeholder="tushar68053@gmail.com" required>
+                            <p class="error" id="email-error"></p>
                         </div>
                         <div>
                             <label for="phone">PHONE NUMBER</label><br>
-                            <input type="tel" id="phone" name="phone-number" placeholder="1234567890" maxlength="10" required>
+                            <input type="tel" id="phone" name="phone-number" placeholder="1234567890" pattern="[0-9]{10}" title="Please type a 10-digit phone number" required>
+                            <p class="error" id="phone-error"></p>
                         </div>
                     </fieldset>
                     <fieldset>
                         <div>
                             <label for="pwd">PASSWORD</label><br>
                             <input type="password" id="pwd" name="password" required>
+                            <p class="error" id="pwd-error"></p>
                         </div>
                         <div>
                             <label for="confirm-pwd">CONFIRM PASSWORD</label><br>
                             <input type="password" id="confirm-pwd" name="confirm-password" required>
+                            <p class="error" id="confirm-pwd-error"></p>
                         </div>
                     </fieldset>
                 </div>
