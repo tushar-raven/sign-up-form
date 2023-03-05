@@ -15,7 +15,7 @@ const passMatchError = document.querySelector("#confirm-pwd-error");
 
 fName.addEventListener("input", function (e) {
     if (!fName.value) {
-        fNameError.textContent = "Please write your full name";
+        fNameError.textContent = "Please write your first name";
     } else if (containsNumbers(fName.value)) {
         fNameError.textContent = "Numbers are not allowed"
     } else {
@@ -25,7 +25,7 @@ fName.addEventListener("input", function (e) {
 
 lName.addEventListener("input", function (e) {
     if (!lName.value) {
-        lNameError.textContent = "Please write your full name";
+        lNameError.textContent = "Please write your last name";
     } else if (containsNumbers(lName.value)) {
         lNameError.textContent = "Numbers are not allowed"
     } else {
