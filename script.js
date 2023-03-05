@@ -12,6 +12,7 @@ const phoneError = document.querySelector("#phone-error");
 const eMailError = document.querySelector("#email-error");
 const passwordError = document.querySelector("#pwd-error");
 const passMatchError = document.querySelector("#confirm-pwd-error");
+const form = document.querySelector("form")
 
 fName.addEventListener("input", function (e) {
     if (!fName.value) {
@@ -61,7 +62,7 @@ password.addEventListener("input", function (e) {
     }
 });
 
-passMatch.addEventListener("input", function (e) {
+passMatch.addEventListener("input", (e) => {
     passMatchCheck()
 });
 
@@ -78,7 +79,9 @@ function passMatchCheck() {
 }
 
 button.addEventListener("click", (e) => {
-    console.log("button")
+    e.preventDefault()
+    alert("Your form is submitted!")
+    location.reload()
 })
 
 function containsNumbers(str) {
