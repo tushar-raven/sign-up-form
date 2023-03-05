@@ -121,8 +121,8 @@ input {
     padding: 5px;
 }
 
-::placeholder{
-    color:lightgrey;
+::placeholder {
+    color: lightgrey;
 }
 
 input:focus {
@@ -158,20 +158,30 @@ label {
     margin-bottom: 20px;
 }
 
-.footer p{
+.footer p {
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-a{
+a {
     text-decoration: none;
     color: #596D48;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.error{
+.error {
     font-family: Arial, Helvetica, sans-serif;
     color: red;
     font-size: 12px;
+}
+
+#pwd-error {
+    width: 180px;
+}
+
+.error-box {
+    outline: none;
+    border: red solid 1px;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0, 20%);
 }
